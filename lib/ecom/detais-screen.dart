@@ -109,7 +109,7 @@ Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
          child: Text("L",style: TextStyle(color: Colors.black),)
             ), SizedBox(width: 5,),
                    CircleAvatar(radius: 15,
-             backgroundColor: Colors.lightGreenAccent.shade700,
+             backgroundColor: Colors.brown,
          child: Text("M",style: TextStyle(color: Colors.black),)
             ), SizedBox(width: 5,),
                    CircleAvatar(radius: 15,
@@ -135,7 +135,7 @@ Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
  Padding(
    padding: const EdgeInsets.all(20),
    child: ClipRRect(    borderRadius: BorderRadius.circular(21),
-    child:   Container(color:Colors.lightGreenAccent.shade700 ,width: double.infinity,height: 40,
+    child:   Container(color:Colors.brown,width: double.infinity,height: 40,
     child: Center(child: Text("checkout",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),)),),
 ),
  )

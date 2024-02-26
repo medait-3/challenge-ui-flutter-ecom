@@ -19,13 +19,13 @@ class _CustomCardState extends State<CustomCard> {
                   childAspectRatio: 1.0,
                   crossAxisSpacing: 0.0,
                   mainAxisSpacing: 1,
-                  mainAxisExtent: 240,
+                  mainAxisExtent: 220,
                 ),
         itemCount: productList.length,
         itemBuilder: (context, index) {
           final product = productList[index];
           return Padding(
-            padding: const EdgeInsets.all(5),
+            padding: const EdgeInsets.symmetric(horizontal: 11),
             child: InkWell(
               onTap: () {
               Navigator.push(
@@ -41,12 +41,12 @@ class _CustomCardState extends State<CustomCard> {
                     children: [
                       
                       Card(child: Padding(
-                        padding: const EdgeInsets.only(top: 10,right: 15,left: 15,bottom: 50),
+                        padding: const EdgeInsets.only(top: 10,right: 15,left: 15,),
                         child: 
                RotationTransition(  turns: new AlwaysStoppedAnimation(-21 / 360),child: Image.asset(product.image,  height: 135 ,fit: BoxFit.contain)),
                       ),
                       surfaceTintColor: Colors.transparent,color:Color.fromARGB(255, 245, 244, 244) ,),
-                 Positioned(left: 130,top: 8,
+                 Positioned(left: 110,top: 8,
                    child: CircleAvatar(backgroundColor: Colors.white,radius: 16,
                      child: IconButton(
                                icon: const Icon(Icons.favorite_border),
@@ -54,18 +54,19 @@ class _CustomCardState extends State<CustomCard> {
                                onPressed: () {},
                              ),
                    ),
-                 ),
-                 Positioned(left: 55,bottom: 30,
-                   child: 
-               RotationTransition(  turns: new AlwaysStoppedAnimation(-21 / 360),child: Text(product.name,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 21),)),
-              
-                 ),Positioned(left:11,top: 5,
-                   child:  Text('\$${product.prix}',style: TextStyle(color: Colors.lightGreenAccent.shade700,fontWeight: FontWeight.bold,fontSize: 21),),
-              
-                 ),
-                 
-                    ],
+                 ),   ],
                   ),
+                   Padding(
+                     padding: const EdgeInsets.only(left:8.0),
+                     child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                       children: [
+                         Text(product.name,style: TextStyle(color: Color.fromARGB(255, 65, 64, 64),fontWeight: FontWeight.normal,fontSize: 18),),
+                        Text('\$${product.prix}',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16 ),),
+                  
+                       ],
+                     ),
+                   ),
+              
                ],
               ),
             ),

@@ -37,7 +37,8 @@ class _bansearchState extends State<bansearch> {
           SizedBox(width: 3,),
       ClipRRect(    borderRadius: BorderRadius.circular(11),
             child: Container(
-            height: 40,color: Colors.lightGreenAccent.shade700,
+            height: 40,color: Colors.brown
+            ,
                     child:IconButton(
                     icon: const Icon(Icons.search),
                     iconSize: 25,color: Colors.white,

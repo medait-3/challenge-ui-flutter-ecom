@@ -49,7 +49,7 @@ final myitems = [
                 dotWidth:28,
                 spacing: 5,
                 dotColor: Colors.grey.shade200,
-                activeDotColor: Colors.lightGreenAccent.shade700,
+                activeDotColor: Colors.brown,
                 paintStyle: PaintingStyle.fill,
               ),)
             
@@ -93,7 +93,7 @@ child: Image.asset(widget.image,height: widget.haight,)),
       width: 80.0,
       height: 25.0,
       decoration: new BoxDecoration(
-        color: Colors.lightGreenAccent.shade700,
+        color: Colors.brown,
         borderRadius: new BorderRadius.circular(50.0),
       ),
       child: new Center(child: new Text('Shop Now', style: new TextStyle(fontSize: 12.0, color: Colors.white),),),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uiecom/ecom/product/home.dart';
+import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/home.dart';
+
+import 'ecom/product/widget/barBttomNav/Mynavbar.dart';
 
 
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,useMaterial3: true
       ),
-      home: homeecom(),
+      home: customvavbar(),
     );
   }
 }
