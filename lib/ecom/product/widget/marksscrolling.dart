@@ -41,7 +41,7 @@ class _navcategoryState extends State<navcategory> {
                           child: ClipRRect(    borderRadius: BorderRadius.circular(11),
                             child: Container(height: 40,
                               color: selectedIndex == index
-                                          ? Colors.brown
+                                          ?  Theme.of(context).colorScheme.onPrimaryContainer
                                           : Color.fromARGB(255, 247, 246, 246),
                                  child: Padding(
                                 padding: const EdgeInsets.all(10.0),

@@ -6,6 +6,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/favorite.dart';
 import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/home.dart';
 
+import 'screenbottonNav/profile.dart';
+
 class customvavbar extends StatefulWidget {
   const customvavbar({super.key});
 
@@ -22,7 +24,7 @@ class _customvavbarState extends State<customvavbar> {
     });
   }
 
-  final pages = [const homeecom(), Container(color: Colors.red,), favoriteScreen(), ];
+  final pages = [const homeecom(), Container(color: Colors.red,), favoriteScreen(),MyProfilePage() ];
  @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,19 +37,23 @@ class _customvavbarState extends State<customvavbar> {
         items: [
           DotNavigationBarItem(
               icon: const Icon(Icons.home),
-              selectedColor: Colors.brown,
+              selectedColor:  Theme.of(context).colorScheme.onPrimary,
               unselectedColor: Colors.grey[200]),
 
           
           DotNavigationBarItem(
               icon: const Icon(Icons.shopping_basket),
-              selectedColor: Colors.brown,
+              selectedColor:  Theme.of(context).colorScheme.onPrimary,
               unselectedColor: Colors.grey[200]),
 
           
           DotNavigationBarItem(
               icon: const Icon(Icons.favorite),
-              selectedColor: Colors.brown,
+              selectedColor:  Theme.of(context).colorScheme.onPrimary,
+              unselectedColor: Colors.grey[200]),
+          DotNavigationBarItem(
+              icon: const Icon(Icons.person),
+              selectedColor:  Theme.of(context).colorScheme.onPrimary,
               unselectedColor: Colors.grey[200]),
 
         ],

@@ -47,7 +47,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                       surfaceTintColor: Colors.transparent,color:Color.fromARGB(255, 245, 244, 244) ,),
                  Positioned(left: 110,top: 8,
-                   child: CircleAvatar(backgroundColor: Colors.white,radius: 16,
+                   child: CircleAvatar(radius: 16,backgroundColor: Theme.of(context).colorScheme.onPrimaryContainer,
                      child: IconButton(
                                icon: const Icon(Icons.favorite_border),
                                iconSize: 16,
@@ -60,8 +60,8 @@ class _CustomCardState extends State<CustomCard> {
                      padding: const EdgeInsets.only(left:8.0),
                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                        children: [
-                         Text(product.name,style: TextStyle(color: Color.fromARGB(255, 65, 64, 64),fontWeight: FontWeight.normal,fontSize: 18),),
-                        Text('\$${product.prix}',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16 ),),
+                         Text(product.name,style: TextStyle(color:  Theme.of(context).colorScheme.primaryContainer,fontWeight: FontWeight.normal,fontSize: 18),),
+                        Text('\$${product.prix}',style: TextStyle(color: Theme.of(context).colorScheme.primaryContainer,fontWeight: FontWeight.bold,fontSize: 16 ),),
                   
                        ],
                      ),

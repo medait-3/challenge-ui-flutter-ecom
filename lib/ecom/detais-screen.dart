@@ -86,12 +86,12 @@ title: Text("Details",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold)
                     SizedBox(height: 10,),
                     Text(widget.product.name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
                     SizedBox(height: 15,),
-                    Text('Description',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: Colors.black),),
+                    Text('Description',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: Theme.of(context).colorScheme.primaryContainer),),
                   SizedBox(height: 10,),
                   RichText(
   text: TextSpan(
-    children: const <TextSpan>[
-      TextSpan(text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.', style: TextStyle(color:Colors.black)),
+    children: <TextSpan>[
+      TextSpan(text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.', style: TextStyle(color:Theme.of(context).colorScheme.primaryContainer,)),
       TextSpan(text: ' Read More', style: TextStyle(color:Colors.red,fontWeight: FontWeight.bold)),
     
     ],
@@ -101,24 +101,24 @@ Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
         Column(crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       Text( 'Size', style: TextStyle(color:Colors.black)),
+       Text( 'Size', style: TextStyle(color:Theme.of(context).colorScheme.primaryContainer)),
        Row(
          children: [
                    CircleAvatar(radius: 15,
              backgroundColor: Color.fromARGB(255, 237, 236, 236),
-         child: Text("L",style: TextStyle(color: Colors.black),)
+         child: Text("40",style: TextStyle(color: Colors.black),)
             ), SizedBox(width: 5,),
                    CircleAvatar(radius: 15,
-             backgroundColor: Colors.brown,
-         child: Text("M",style: TextStyle(color: Colors.black),)
-            ), SizedBox(width: 5,),
-                   CircleAvatar(radius: 15,
-             backgroundColor: Color.fromARGB(255, 237, 236, 236),
-         child: Text("S",style: TextStyle(color: Colors.black),)
+             backgroundColor: Colors.purple,
+         child: Text("41",style: TextStyle(color: Colors.black),)
             ), SizedBox(width: 5,),
                    CircleAvatar(radius: 15,
              backgroundColor: Color.fromARGB(255, 237, 236, 236),
-         child: Text("XL",style: TextStyle(color: Colors.black),)
+         child: Text("42",style: TextStyle(color: Colors.black),)
+            ), SizedBox(width: 5,),
+                   CircleAvatar(radius: 15,
+             backgroundColor: Color.fromARGB(255, 237, 236, 236),
+         child: Text("43",style: TextStyle(color: Colors.black),)
             ), SizedBox(width: 5,),
          ],
        ),
@@ -126,8 +126,8 @@ Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
     ],),
     Column(crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       Text( 'Price', style: TextStyle(color:Colors.black)),
-       Text( '\$${widget.product.prix}', style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold,fontSize: 18)),
+       Text( 'Price', style: TextStyle(color:Theme.of(context).colorScheme.primaryContainer)),
+       Text( '\$${widget.product.prix}', style: TextStyle(color:Theme.of(context).colorScheme.primaryContainer,fontWeight: FontWeight.bold,fontSize: 18)),
        
     ],),
   ],
@@ -135,7 +135,7 @@ Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
  Padding(
    padding: const EdgeInsets.all(20),
    child: ClipRRect(    borderRadius: BorderRadius.circular(21),
-    child:   Container(color:Colors.brown,width: double.infinity,height: 40,
+    child:   Container(color:Colors.purple,width: double.infinity,height: 40,
     child: Center(child: Text("checkout",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),)),),
 ),
  )

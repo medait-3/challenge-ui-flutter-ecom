@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:uiecom/ecom/product/widget/bannerScrolling/bannerscrolling.dart';
 import 'package:uiecom/ecom/product/widget/marksscrolling.dart';
 
+import '../../../../../theme/theme-provider.dart';
 import '../../../../data/data.dart';
 import '../../../../detais-screen.dart';
 import '../../listcard.dart';
@@ -33,6 +35,7 @@ class _homeecomState extends State<homeecom> {
                     onPressed: () {},
                   ),
           ),
+        
         ],
                 leading: Padding(
           padding: const EdgeInsets.only(left: 15),
