@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/home.dart';
-
 import 'ecom/product/widget/barBttomNav/Mynavbar.dart';
-import 'theme/theme-config.dart';
-import 'theme/theme-provider.dart';
+import 'connst/theme/theme-config.dart';
+import 'connst/theme/theme-provider.dart';
 
 
 

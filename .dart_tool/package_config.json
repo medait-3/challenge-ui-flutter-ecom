@@ -74,12 +74,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "floating_bottom_navigation_bar",
-      "rootUri": "file:///Users/mac/development/flutter/.pub-cache/hosted/pub.dartlang.org/floating_bottom_navigation_bar-1.5.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter",
       "rootUri": "file:///Users/mac/development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -302,7 +296,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-02-27T14:01:04.142957Z",
+  "generated": "2024-02-28T12:13:10.791578Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
