@@ -4,7 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../data/data.dart';
+import '../../data/data.dart';
 
 class Scrolbann extends StatefulWidget {
   const Scrolbann({super.key});
@@ -27,9 +27,10 @@ final myitems = [
     return Column(children: [
         CarouselSlider(
                 options: CarouselOptions(
+                  
                   autoPlay: true,
                   height: 130,
-                  autoPlayCurve: Curves.fastOutSlowIn,
+                  autoPlayCurve: Curves.easeInOutBack,
                   autoPlayAnimationDuration: const Duration(milliseconds: 800),
                   autoPlayInterval: const Duration(seconds: 2),
                   enlargeCenterPage: true,
@@ -44,13 +45,13 @@ final myitems = [
               ),SizedBox(height: 12,),
               AnimatedSmoothIndicator(activeIndex: myCurrentIndex,
               count: myitems.length,
-              effect: WormEffect(
-                dotHeight: 4,
-                dotWidth:28,
+              effect: ExpandingDotsEffect(
+                dotHeight: 7,
+                dotWidth:7,
                 spacing: 5,
                 dotColor: Colors.grey.shade200,
                 activeDotColor:  Theme.of(context).colorScheme.onPrimaryContainer,
-                paintStyle: PaintingStyle.fill,
+                paintStyle: PaintingStyle.fill
               ),)
             
     ],);

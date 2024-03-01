@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uiecom/ecom/product/widget/bannerScrolling/bannerscrolling.dart';
+import 'package:uiecom/ecom/product/widget/bannerscrolling.dart';
 import 'package:uiecom/ecom/product/widget/marksscrolling.dart';
 
-import '../../../../../theme/theme-provider.dart';
-import '../../../../data/data.dart';
-import '../../../../detais-screen.dart';
-import '../../listcard.dart';
-import '../../searchbaner.dart';
+import '../../../../connst/theme/theme-provider.dart';
+import '../../../data/data.dart';
+import '../detais-screen.dart';
+import '../../widget/listcard.dart';
+import '../../widget/searchbaner.dart';
 
 class homeecom extends StatefulWidget {
   const homeecom({super.key});

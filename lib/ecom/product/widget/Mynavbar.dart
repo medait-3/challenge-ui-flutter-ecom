@@ -1,9 +1,9 @@
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/favorite.dart';
-import 'package:uiecom/ecom/product/widget/barBttomNav/screenbottonNav/home.dart';
+import 'package:uiecom/ecom/product/screen/screenbottonNav/favorite.dart';
+import 'package:uiecom/ecom/product/screen/screenbottonNav/home.dart';
 
-import 'screenbottonNav/profile.dart';
+import '../screen/screenbottonNav/profile.dart';
 
 class customvavbar extends StatefulWidget {
   const customvavbar({super.key});

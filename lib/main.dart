@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'ecom/product/widget/barBttomNav/Mynavbar.dart';
+import 'ecom/product/widget/Mynavbar.dart';
 import 'connst/theme/theme-config.dart';
 import 'connst/theme/theme-provider.dart';
 

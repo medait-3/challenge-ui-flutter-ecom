@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../data/data.dart';
-import '../../detais-screen.dart';
+import '../screen/detais-screen.dart';
 
 class CustomCard extends StatefulWidget {
   const CustomCard({super.key});

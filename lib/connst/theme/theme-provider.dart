@@ -1,6 +1,6 @@
   import 'package:flutter/foundation.dart';
 
-import '../ecom/shredPreferance/sharedpreferance.dart'; 
+import '../shredPreferance/sharedpreferance.dart'; 
 
 class ThemeStateProvider with ChangeNotifier {
   bool _isDarkTheme = false;
